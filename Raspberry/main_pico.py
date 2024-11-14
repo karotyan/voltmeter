@@ -8,7 +8,7 @@ VREF = 3.33
 DIV_R1 = 2000 
 DIV_R2 =  1000   
 
-voltKoef = VREF * ((DIV_R1 + DIV_R2) / DIV_R2) / 655536
+voltKoef = VREF * ((DIV_R1 + DIV_R2) / DIV_R2) / 65536 
 
 while True:
     # Відправка даних через Ком-порт

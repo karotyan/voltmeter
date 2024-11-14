@@ -32,7 +32,7 @@ def update(frame):
     if ser.in_waiting > 0:
         try:
             ser.reset_input_buffer()
-            voltage = float(ser.readline().decode().strip())*max_voltage
+            voltage = float(ser.readline().decode().strip())
 
             voltage = max(0, min(voltage, max_voltage))
 
